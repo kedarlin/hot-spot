@@ -1,0 +1,151 @@
+.home-body-container {
+    padding: 0 0 0 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    width: 70%;
+}
+
+.home-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #dbdee0;
+}
+
+.home-button {
+    padding: 10px;
+    background-color: rgb(184, 76, 76);
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    font-weight: 550;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main {
+    width: 100%;
+    padding: 50px 30px 30px 30px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.box {
+    height: 130px;
+    width: 190px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: #5500cb;
+}
+.box:hover {
+    transform: scale(1.08);
+}
+.home-icon {
+    width: 100px;
+    color: white;
+}
+.text {
+    color: white;
+}
+.topic {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.topic-heading {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.report-container {
+    min-height: 300px;
+    max-width: 1200px;
+    margin: 70px auto 0px auto;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+    padding: 0px 20px 20px 20px;
+}
+
+.report-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+    border-bottom: 2px solid rgba(0, 20, 151, 0.59);
+}
+
+.recent-Articles {
+    font-size: 30px;
+    font-weight: 600;
+    color: #5500cb;
+}
+
+.view {
+    height: 35px;
+    width: 90px;
+    border-radius: 8px;
+    background-color: #5500cb;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.report-body {
+    padding: 20px;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-topic-heading,
+.item1 {
+    display: table-row;
+}
+
+.report-topic-heading th,
+.item1 td {
+    padding: 10px;
+    text-align: left;
+}
+
+.t-op {
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.t-op-nextlvl {
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
