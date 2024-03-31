@@ -1,0 +1,74 @@
+.newcase-body-container {
+    padding: 0 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.newcase-content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    width: 70%;
+}
+.newcase-head {
+    padding: 50px 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.newcase-title{
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 10px 50px;
+}
+.newcase-title-head {
+    margin: 0;
+}
+.newcase-title-desc {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #585359;
+}
+.newcase-title-input {
+    padding: 8px 30px 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.newcase-title-input::placeholder {
+    color: #9f95a0;
+}
+.newcase-title-input:hover {
+    border: 1px solid #0255a8;
+}
+.newcase-title-inputarea {
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: top;
+    word-wrap: break-word;
+    resize:none;
+    margin-bottom: 10px;
+}
+.newcase-submit {
+    margin: 30px 0 0 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 450;
+    font-size: 13px;
+    width: fit-content;
+    color: white;
+    background-color: #1b75d0;
+    cursor: pointer;
+}
+.newcase-submit:hover {
+    background-color: #0255a8;
+}
+.newcase-error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 30px;
+}

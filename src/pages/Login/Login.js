@@ -13,28 +13,28 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    useEffect(() => {
-        const checkAuthentication = async () => {
-            const token = localStorage.getItem('token');
-            if (token) {
-                try {
-                    const response = await axios.post('http://localhost:3005/api/auth/verify', null, {
-                        headers: {
-                            authorization: `Bearer ${token}`
-                        }
-                    });
-                    if (response.status === 200) {
-                        navigate('/home');
-                    }
-                } catch (error) {
-                    localStorage.removeItem('token');
-                    console.error('Verification failed:', error);
-                }
-            }
-        };
+    // useEffect(() => {
+    //     const checkAuthentication = async () => {
+    //         const token = localStorage.getItem('token');
+    //         if (token) {
+    //             try {
+    //                 const response = await axios.post('http://localhost:3005/api/auth/verify', null, {
+    //                     headers: {
+    //                         authorization: `Bearer ${token}`
+    //                     }
+    //                 });
+    //                 if (response.status === 200) {
+    //                     navigate('/home');
+    //                 }
+    //             } catch (error) {
+    //                 localStorage.removeItem('token');
+    //                 console.error('Verification failed:', error);
+    //             }
+    //         }
+    //     };
 
-        checkAuthentication();
-    }, [navigate]);
+    //     checkAuthentication();
+    // }, [navigate]);
 
     const togglePasswordVisibility = () => {
         setIsPasswordVisible(!isPasswordVisible);
@@ -46,15 +46,15 @@ const Login = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://localhost:3005/api/auth/signin', {
-                email,
-                password
-            });
-            const { token, userId, profile } = response.data;
-            localStorage.setItem('token', token);
-            localStorage.setItem('userId', userId);
-            localStorage.setItem('user_profile', profile)
-            console.log(localStorage.getItem('token'), localStorage.getItem('userId'));
+            // const response = await axios.post('http://localhost:3005/api/auth/signin', {
+            //     email,
+            //     password
+            // });
+            // const { token, userId, profile } = response.data;
+            // localStorage.setItem('token', token);
+            // localStorage.setItem('userId', userId);
+            // localStorage.setItem('user_profile', profile)
+            // console.log(localStorage.getItem('token'), localStorage.getItem('userId'));
             navigate('/home');
         } catch (error) {
             console.error('Login failed:', error);

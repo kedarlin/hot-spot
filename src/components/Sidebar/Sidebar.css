@@ -1,7 +1,7 @@
 .sidebar-container {
     width: 170px;
-    margin-top: 40px;
-    height: 90vh;
+    margin-top: 50px;
+    height: 100;
     border-right: 2px solid #dbdee0;
 }
 .sidebar-items {

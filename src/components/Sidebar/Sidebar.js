@@ -11,11 +11,11 @@ const Sidebar = () => {
     const handleHome = () => {
         navigate('/home');
     }
-    const handleQuestions = () => {
-        navigate('/questions');     
+    const handleHotspots = () => {
+        navigate('/hotspots');     
     }
-    const handleTags = () => {
-        navigate('/tags');
+    const handleAlerts = () => {
+        navigate('/alerts');
     }
     const handleUsers = () => {
         navigate('/users');
@@ -28,11 +28,11 @@ const Sidebar = () => {
                     <FaHome className='sidebar-icons' />
                     <p className='sidebar-item-p'>Home</p>
                 </div>
-                <div className='sidebar-item' onClick={handleQuestions}>
+                <div className='sidebar-item' onClick={handleHotspots}>
                     <FaMapMarked className='sidebar-icons' />
                     <p className='sidebar-item-p'>Hotspots</p>
                 </div>
-                <div className='sidebar-item' onClick={handleTags}>
+                <div className='sidebar-item' onClick={handleAlerts}>
                     <BiSolidBell className='sidebar-icons' />
                     <p className='sidebar-item-p'>Alerts</p>
                 </div>
